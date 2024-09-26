@@ -30,7 +30,7 @@ nav{
         }
     }
     @media screen and (max-width: 700px){
-        
+        flex-direction: column;  
     }     
 }
 .banner {
@@ -263,6 +263,9 @@ nav{
             border: 15px solid rgb(255, 255, 255);    
         }
     }
+    @media screen and (max-width: 700px){
+        flex-direction: column;  
+    }  
 }
 .contact {
     flex-direction: column;
@@ -321,4 +324,7 @@ nav{
             }
         }
     }
+    @media screen and (max-width: 700px){
+        flex-direction: column;  
+    }  
 }
