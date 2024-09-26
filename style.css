@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     background-color: rgba(74, 71, 71, 0.779);
@@ -12,28 +13,34 @@ nav{
     padding: 0 6rem;
     border-bottom: 33px solid rgb(49, 48, 48);
     row-gap: 39px;
-    & .profile{
+
+    & .profile {
         color: aliceblue;
         font-family: cursive;
         font-size: 20px;
 
     }
+
     & .link {
         display: flex;
         list-style: none;
+
         & li {
             margin: 0 1rem;
-            & a{
+
+            & a {
                 font-family: cursive;
                 color: aliceblue;
                 text-decoration: none;
             }
         }
     }
-    @media screen and (max-width: 700px){
-        flex-direction: column;  
-    }     
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
 }
+
 .banner {
     height: auto;
     width: 100%;
@@ -43,16 +50,19 @@ nav{
     padding: 3rem 3rem;
     color: rgb(255, 255, 255);
     font-family: cursive;
-    & .banner-wrapper1{
+
+    & .banner-wrapper1 {
         height: auto;
         width: 100%;
         background-color: rgba(250, 235, 215, 0.548);
         border-radius: 10px;
         font-family: cursive;
         padding: 1rem 6rem;
-        & .banner-wrapper1-1{
+
+        & .banner-wrapper1-1 {
             color: rgb(0, 0, 0);
-            & .banner-wrapper1-1-1{
+
+            & .banner-wrapper1-1-1 {
                 background-color: rgb(56, 53, 53);
                 color: rgb(255, 255, 255);
                 height: 35px;
@@ -63,19 +73,23 @@ nav{
                 justify-content: center;
                 align-items: center;
             }
-            & .banner-wrapper1-1-2{
+
+            & .banner-wrapper1-1-2 {
                 padding-left: 40px;
             }
-            & .hirizontal-line{
+
+            & .hirizontal-line {
                 width: 100%;
                 height: 3px;
                 background-color: black;
                 margin: 10px;
             }
         }
-        & .banner-wrapper1-2{
+
+        & .banner-wrapper1-2 {
             color: rgb(0, 0, 0);
-            & .banner-wrapper1-2-1{
+
+            & .banner-wrapper1-2-1 {
                 background-color: rgb(56, 53, 53);
                 color: rgb(255, 255, 255);
                 height: 35px;
@@ -87,25 +101,55 @@ nav{
                 align-items: center;
                 margin: 10px 0;
             }
-            & .hirizontal-line{
+
+            & .hirizontal-line {
                 width: 100%;
                 height: 3px;
                 background-color: black;
                 margin: 10px;
             }
-            & .banner-wrapper1-2-2{padding-left: 40px;}
-            & .banner-wrapper1-2-3{padding-left: 80px;}
-            & .banner-wrapper1-2-4{padding-left: 80px;}
-            & .banner-wrapper1-2-5{padding-left: 40px;}
-            & .banner-wrapper1-2-6{padding-left: 80px;}
-            & .banner-wrapper1-2-7{padding-left: 80px;}
-            & .banner-wrapper1-2-8{padding-left: 40px;}
-            & .banner-wrapper1-2-9{padding-left: 80px;}
-            & .banner-wrapper1-2-10{padding-left: 80px;}
+
+            & .banner-wrapper1-2-2 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-2-3 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-2-4 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-2-5 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-2-6 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-2-7 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-2-8 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-2-9 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-2-10 {
+                padding-left: 80px;
+            }
         }
-        & .banner-wrapper1-3{
+
+        & .banner-wrapper1-3 {
             color: rgb(0, 0, 0);
-            & .banner-wrapper1-3-1{
+
+            & .banner-wrapper1-3-1 {
                 background-color: rgb(56, 53, 53);
                 color: rgb(255, 255, 255);
                 height: 35px;
@@ -117,20 +161,29 @@ nav{
                 align-items: center;
                 margin: 10px 0;
             }
-            & .hirizontal-line{
+
+            & .hirizontal-line {
                 width: 100%;
                 height: 3px;
                 background-color: black;
                 margin: 10px;
             }
-            & .banner-wrapper1-3-2{padding-left: 40px;}
-            & .banner-wrapper1-3-3{padding-left: 40px;}
+
+            & .banner-wrapper1-3-2 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-3-3 {
+                padding-left: 40px;
+            }
         }
-        & .banner-wrapper1-4{
+
+        & .banner-wrapper1-4 {
             color: rgb(0, 0, 0);
             flex-direction: column;
             display: flex;
-            & .banner-wrapper1-4-1{
+
+            & .banner-wrapper1-4-1 {
                 background-color: rgb(56, 53, 53);
                 color: rgb(255, 255, 255);
                 height: 35px;
@@ -142,36 +195,59 @@ nav{
                 align-items: center;
                 margin: 10px 0;
             }
-            & .hirizontal-line{
+
+            & .hirizontal-line {
                 width: 100%;
                 height: 3px;
                 background-color: black;
                 margin: 10px;
             }
-            & .banner-wrapper1-4-2{padding-left: 40px;}
-            & .banner-wrapper1-4-3{padding-left: 80px;}
-            & .banner-wrapper1-4-4{padding-left: 80px;}
-            & .banner-wrapper1-4-5{padding-left: 40px;}
-            & .banner-wrapper1-4-6{padding-left: 80px;}
-            & .banner-wrapper1-4-7{padding-left: 80px;}
+
+            & .banner-wrapper1-4-2 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-4-3 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-4-4 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-4-5 {
+                padding-left: 40px;
+            }
+
+            & .banner-wrapper1-4-6 {
+                padding-left: 80px;
+            }
+
+            & .banner-wrapper1-4-7 {
+                padding-left: 80px;
+            }
         }
     }
-    & .banner-wrapper3{
+
+    & .banner-wrapper3 {
         height: 10px;
         width: 30px;
     }
-    & .banner-wrapper2{
+
+    & .banner-wrapper2 {
         display: flex;
         flex-direction: column;
-        
+
         row-gap: 50px;
-        & .banner-wrapper2-1{
+
+        & .banner-wrapper2-1 {
             display: flex;
             flex-wrap: wrap;
             column-gap: 30px;
             row-gap: 30px;
             justify-content: center;
-            & .banner-itame1-1{
+
+            & .banner-itame1-1 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e0.jpg");
@@ -179,9 +255,10 @@ nav{
                 background-size: cover;
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);
-                
+
             }
-            & .banner-itame2-1{
+
+            & .banner-itame2-1 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e1.jpg");
@@ -190,24 +267,27 @@ nav{
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);
             }
-            & .banner-itame3-1{
+
+            & .banner-itame3-1 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e2.jpg");
                 background-position: center;
                 background-size: cover;
                 border-radius: 10px;
-                border: 5px solid rgb(255, 255, 255);    
+                border: 5px solid rgb(255, 255, 255);
             }
-            
+
         }
-        & .banner-wrapper2-2{
+
+        & .banner-wrapper2-2 {
             display: flex;
             flex-wrap: wrap;
             column-gap: 30px;
             row-gap: 30px;
             justify-content: center;
-            & .banner-itame1-2{
+
+            & .banner-itame1-2 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e3.jpg");
@@ -215,9 +295,10 @@ nav{
                 background-size: cover;
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);
-                
+
             }
-            & .banner-itame2-2{
+
+            & .banner-itame2-2 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e4.jpg");
@@ -226,24 +307,27 @@ nav{
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);
             }
-            & .banner-itame3-2{
+
+            & .banner-itame3-2 {
                 height: 410px;
                 width: 430px;
                 background-image: url("image/e5.jpg");
                 background-position: center;
                 background-size: cover;
                 border-radius: 10px;
-                border: 5px solid rgb(255, 255, 255);    
+                border: 5px solid rgb(255, 255, 255);
             }
         }
     }
-    & .banner-wrapper{
+
+    & .banner-wrapper {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 50px;
         justify-content: center;
-        & .banner-itame1{
+
+        & .banner-itame1 {
             height: 900px;
             width: 430px;
             background-image: url("image/time02.png");
@@ -251,9 +335,10 @@ nav{
             background-size: cover;
             border-radius: 10px;
             border: 15px solid rgb(255, 255, 255);
-            
+
         }
-        & .banner-itame2{
+
+        & .banner-itame2 {
             height: 900px;
             width: 430px;
             background-image: url("image/time01.png");
@@ -262,7 +347,8 @@ nav{
             border-radius: 10px;
             border: 15px solid rgb(255, 255, 255);
         }
-        & .banner-itame3{
+
+        & .banner-itame3 {
             height: 900px;
             width: 430px;
             background-image: url("image/time.png");
@@ -271,32 +357,38 @@ nav{
             border-radius: 10px;
             border: 15px solid rgb(255, 255, 255);
         }
-        
+
     }
 }
+
 .contact {
     flex-direction: column;
     background-color: rgba(74, 71, 71, 0.779);
     height: 170px;
     border-top: 33px solid rgb(49, 48, 48);
-    & .contact-text{
+
+    & .contact-text {
         display: flex;
         justify-content: center;
         color: aliceblue;
         font-family: cursive;
         padding: 0.75rem 0;
     }
+
     & .link-contact {
         display: flex;
         list-style: none;
         justify-content: center;
         margin: 1rem 0;
+
         & li {
             margin: 0 2rem;
-            & a{
+
+            & a {
                 color: aliceblue;
                 text-decoration: none;
-                & .icon1{
+
+                & .icon1 {
                     height: 50px;
                     width: 50px;
                     background-image: url("image/icon1.png");
@@ -304,7 +396,8 @@ nav{
                     background-size: cover;
                     border-radius: 15px;
                 }
-                & .icon2{
+
+                & .icon2 {
                     height: 50px;
                     width: 50px;
                     background-image: url("image/icon2.png");
@@ -312,7 +405,8 @@ nav{
                     background-size: cover;
                     border-radius: 15px;
                 }
-                & .icon3{
+
+                & .icon3 {
                     height: 50px;
                     width: 50px;
                     background-image: url("image/icon3.png");
@@ -320,18 +414,20 @@ nav{
                     background-size: cover;
                     border-radius: 15px;
                 }
-                & .icon4{
+
+                & .icon4 {
                     height: 50px;
                     width: 50px;
                     background-image: url("image/icon4.png");
                     background-position: center;
                     background-size: cover;
                     border-radius: 15px;
-                }    
+                }
             }
         }
     }
-    @media screen and (max-width: 700px){
-        flex-direction: column;  
-    }  
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
 }
