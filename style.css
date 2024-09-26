@@ -10,7 +10,8 @@ nav{
     height: 130px;
     align-items: center;
     padding: 0 6rem;
-    border-bottom: 30px solid rgb(49, 48, 48);
+    border-bottom: 33px solid rgb(49, 48, 48);
+    row-gap: 39px;
     & .profile{
         color: aliceblue;
         font-family: cursive;
@@ -276,7 +277,7 @@ nav{
     flex-direction: column;
     background-color: rgba(74, 71, 71, 0.779);
     height: 170px;
-    border-top: 30px solid rgb(49, 48, 48);
+    border-top: 33px solid rgb(49, 48, 48);
     & .contact-text{
         display: flex;
         justify-content: center;
