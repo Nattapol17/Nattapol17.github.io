@@ -350,7 +350,10 @@ nav {
             background-size: cover;
             border-radius: 10px;
             border: 15px solid rgb(255, 255, 255);
-
+            @media screen and (max-width: 700px) {
+                height: auto;
+                max-width: 100%;
+            }
         }
 
         & .banner-itame2 {
@@ -442,7 +445,8 @@ nav {
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 700px) {
+    
         flex-direction: column;
     }
 }
