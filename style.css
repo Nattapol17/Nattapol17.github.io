@@ -36,7 +36,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
         flex-direction: column;
     }
 }
@@ -427,7 +427,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
         flex-direction: column;
     }
 }
