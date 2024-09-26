@@ -29,12 +29,13 @@ nav{
             }
         }
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 700px){
         flex-direction: column;  
     }     
 }
 .banner {
-    height: 1000px;
+    height: auto;
+    width: 100%;
     background-image: url("https://www.ghibli.jp/gallery/ged014.jpg");
     background-position: center;
     background-size: cover;
@@ -126,6 +127,8 @@ nav{
         }
         & .banner-wrapper1-4{
             color: rgb(0, 0, 0);
+            flex-direction: column;
+            display: flex;
             & .banner-wrapper1-4-1{
                 background-color: rgb(56, 53, 53);
                 color: rgb(255, 255, 255);
@@ -153,20 +156,20 @@ nav{
         }
     }
     & .banner-wrapper3{
-        background-color: rgb(0, 0, 0);
         height: 10px;
         width: 30px;
     }
     & .banner-wrapper2{
-        display: grid;
-        grid-template-rows: 1fr 1fr ;
+        display: flex;
+        flex-direction: column;
         
         row-gap: 50px;
         & .banner-wrapper2-1{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 50px;
-            
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
             & .banner-itame1-1{
                 height: 410px;
                 width: 430px;
@@ -195,11 +198,14 @@ nav{
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);    
             }
+            
         }
         & .banner-wrapper2-2{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
             & .banner-itame1-2{
                 height: 410px;
                 width: 430px;
@@ -228,11 +234,11 @@ nav{
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);    
             }
-        }  
+        }
     }
     & .banner-wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         column-gap: 50px;
         & .banner-itame1{
             height: 900px;
@@ -260,16 +266,17 @@ nav{
             background-position: center;
             background-size: cover;
             border-radius: 10px;
-            border: 15px solid rgb(255, 255, 255);    
+            border: 15px solid rgb(255, 255, 255);
         }
-        @media screen and (max-width: 650px){
-            flex-direction: column;  
-        }  
+        
     }
-    @media screen and (max-width: 650px){
-        flex-direction: column;  
-    }  
 }
+
+
+
+
+
+
 .contact {
     flex-direction: column;
     background-color: rgba(74, 71, 71, 0.779);
@@ -327,7 +334,7 @@ nav{
             }
         }
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 700px){
         flex-direction: column;  
     }  
 }
