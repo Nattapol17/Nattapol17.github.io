@@ -32,11 +32,14 @@ nav {
                 font-family: cursive;
                 color: aliceblue;
                 text-decoration: none;
+                & .hover-text:hover{
+                    color: rgb(165, 50, 42);
+                }
             }
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
         flex-direction: column;
     }
 }
@@ -50,6 +53,11 @@ nav {
     padding: 3rem 3rem;
     color: rgb(255, 255, 255);
     font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 
     & .banner-wrapper1 {
         height: auto;
@@ -230,16 +238,23 @@ nav {
     }
 
     & .banner-wrapper3 {
-        height: 10px;
-        width: 30px;
+        height: 50px;
+        width: 450px;
+        background-color: black;
+        border-radius: 23px;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(255, 255, 255);
+
     }
 
     & .banner-wrapper2 {
         display: flex;
         flex-direction: column;
-
         row-gap: 50px;
-
+        margin-top: 50px;
         & .banner-wrapper2-1 {
             display: flex;
             flex-wrap: wrap;
@@ -319,13 +334,13 @@ nav {
             }
         }
     }
-
     & .banner-wrapper {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
         row-gap: 50px;
         justify-content: center;
+        margin-top: 50px;
 
         & .banner-itame1 {
             height: 900px;
@@ -427,7 +442,25 @@ nav {
         }
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
         flex-direction: column;
     }
+}
+.slideshow-container {
+    height: auto;
+    width: 100%;
+    border-bottom: 33px solid rgb(49, 48, 48);
+    background-color: rgb(121, 15, 13);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.slides img {
+    height: auto;
+    width: 700px;
+    margin-top: 3px;
+    border: 5px solid white;
+
 }
