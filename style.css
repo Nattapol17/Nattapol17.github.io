@@ -29,7 +29,7 @@ nav{
             }
         }
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         flex-direction: column;  
     }     
 }
@@ -238,8 +238,9 @@ nav{
     }
     & .banner-wrapper{
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         column-gap: 50px;
+        row-gap: 50px;
         & .banner-itame1{
             height: 900px;
             width: 430px;
@@ -334,7 +335,7 @@ nav{
             }
         }
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         flex-direction: column;  
     }  
 }
