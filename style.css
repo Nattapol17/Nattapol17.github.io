@@ -38,7 +38,6 @@ nav {
             }
         }
     }
-
     @media screen and (max-width: 700px) {
         flex-direction: column;
         
@@ -375,10 +374,6 @@ nav {
         }
 
     }
-    @media screen and (max-width: 700px) {
-        flex-direction: column;
-       
-    }
 }
 
 .contact {
@@ -448,7 +443,7 @@ nav {
     }
     @media screen and (max-width: 700px) {
         flex-direction: column;
-        padding: 1rem;
+        
     }
 }
 .slideshow-container {
