@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(74, 71, 71, 0.779);
+    height: 130px;
+    align-items: center;
+    padding: 0 6rem;
+    border-bottom: 30px solid rgb(49, 48, 48);
+    & .profile{
+        color: aliceblue;
+        font-family: cursive;
+        font-size: 20px;
+
+    }
+    & .link {
+        display: flex;
+        list-style: none;
+        & li {
+            margin: 0 1rem;
+            & a{
+                font-family: cursive;
+                color: aliceblue;
+                text-decoration: none;
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        
+    }     
+}
+.banner {
+    height: 1000px;
+    background-image: url("https://www.ghibli.jp/gallery/ged014.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 3rem;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    & .banner-wrapper1{
+        height: 900px;
+        width: 1380px;
+        background-color: rgba(250, 235, 215, 0.548);
+        border-radius: 10px;
+        font-family: cursive;
+        padding: 1rem 6rem;
+        & .banner-wrapper1-1{
+            color: rgb(0, 0, 0);
+            & .banner-wrapper1-1-1{
+                background-color: rgb(56, 53, 53);
+                color: rgb(255, 255, 255);
+                height: 35px;
+                width: 200px;
+                border-radius: 35px;
+                border: 3px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            & .banner-wrapper1-1-2{
+                padding-left: 40px;
+            }
+            & .hirizontal-line{
+                width: 900px;
+                height: 3px;
+                background-color: black;
+                margin: 10px;
+            }
+        }
+        & .banner-wrapper1-2{
+            color: rgb(0, 0, 0);
+            & .banner-wrapper1-2-1{
+                background-color: rgb(56, 53, 53);
+                color: rgb(255, 255, 255);
+                height: 35px;
+                width: 200px;
+                border-radius: 35px;
+                border: 3px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+            }
+            & .hirizontal-line{
+                width: 900px;
+                height: 3px;
+                background-color: black;
+                margin: 10px;
+            }
+            & .banner-wrapper1-2-2{padding-left: 40px;}
+            & .banner-wrapper1-2-3{padding-left: 80px;}
+            & .banner-wrapper1-2-4{padding-left: 80px;}
+            & .banner-wrapper1-2-5{padding-left: 40px;}
+            & .banner-wrapper1-2-6{padding-left: 80px;}
+            & .banner-wrapper1-2-7{padding-left: 80px;}
+            & .banner-wrapper1-2-8{padding-left: 40px;}
+            & .banner-wrapper1-2-9{padding-left: 80px;}
+            & .banner-wrapper1-2-10{padding-left: 80px;}
+        }
+        & .banner-wrapper1-3{
+            color: rgb(0, 0, 0);
+            & .banner-wrapper1-3-1{
+                background-color: rgb(56, 53, 53);
+                color: rgb(255, 255, 255);
+                height: 35px;
+                width: 200px;
+                border-radius: 35px;
+                border: 3px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+            }
+            & .hirizontal-line{
+                width: 900px;
+                height: 3px;
+                background-color: black;
+                margin: 10px;
+            }
+            & .banner-wrapper1-3-2{padding-left: 40px;}
+            & .banner-wrapper1-3-3{padding-left: 40px;}
+        }
+        & .banner-wrapper1-4{
+            color: rgb(0, 0, 0);
+            & .banner-wrapper1-4-1{
+                background-color: rgb(56, 53, 53);
+                color: rgb(255, 255, 255);
+                height: 35px;
+                width: 200px;
+                border-radius: 35px;
+                border: 3px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+            }
+            & .hirizontal-line{
+                width: 900px;
+                height: 3px;
+                background-color: black;
+                margin: 10px;
+            }
+            & .banner-wrapper1-4-2{padding-left: 40px;}
+            & .banner-wrapper1-4-3{padding-left: 80px;}
+            & .banner-wrapper1-4-4{padding-left: 80px;}
+            & .banner-wrapper1-4-5{padding-left: 40px;}
+            & .banner-wrapper1-4-6{padding-left: 80px;}
+            & .banner-wrapper1-4-7{padding-left: 80px;}
+        }
+    }
+    & .banner-wrapper3{
+        background-color: rgb(0, 0, 0);
+        height: 10px;
+        width: 30px;
+    }
+    & .banner-wrapper2{
+        display: grid;
+        grid-template-rows: 1fr 1fr ;
+        
+        row-gap: 50px;
+        & .banner-wrapper2-1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 50px;
+            
+            & .banner-itame1-1{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e0.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+                
+            }
+            & .banner-itame2-1{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e1.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+            & .banner-itame3-1{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e2.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);    
+            }
+        }
+        & .banner-wrapper2-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 50px;
+            & .banner-itame1-2{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e3.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+                
+            }
+            & .banner-itame2-2{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e4.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+            & .banner-itame3-2{
+                height: 410px;
+                width: 430px;
+                background-image: url("image/e5.jpg");
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);    
+            }
+        }  
+    }
+    & .banner-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        & .banner-itame1{
+            height: 900px;
+            width: 430px;
+            background-image: url("image/time02.png");
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            border: 15px solid rgb(255, 255, 255);
+            
+        }
+        & .banner-itame2{
+            height: 900px;
+            width: 430px;
+            background-image: url("image/time01.png");
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            border: 15px solid rgb(255, 255, 255);
+        }
+        & .banner-itame3{
+            height: 900px;
+            width: 430px;
+            background-image: url("image/time.png");
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            border: 15px solid rgb(255, 255, 255);    
+        }
+    }
+}
+.contact {
+    flex-direction: column;
+    background-color: rgba(74, 71, 71, 0.779);
+    height: 170px;
+    border-top: 30px solid rgb(49, 48, 48);
+    & .contact-text{
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        font-family: cursive;
+        padding: 0.75rem 0;
+    }
+    & .link-contact {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin: 1rem 0;
+        & li {
+            margin: 0 2rem;
+            & a{
+                color: aliceblue;
+                text-decoration: none;
+                & .icon1{
+                    height: 50px;
+                    width: 50px;
+                    background-image: url("image/icon1.png");
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 15px;
+                }
+                & .icon2{
+                    height: 50px;
+                    width: 50px;
+                    background-image: url("image/icon2.png");
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 15px;
+                }
+                & .icon3{
+                    height: 50px;
+                    width: 50px;
+                    background-image: url("image/icon3.png");
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 15px;
+                }
+                & .icon4{
+                    height: 50px;
+                    width: 50px;
+                    background-image: url("image/icon4.png");
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 15px;
+                }    
+            }
+        }
+    }
+}
