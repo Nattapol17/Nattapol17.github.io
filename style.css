@@ -238,15 +238,17 @@ nav {
     }
 
     & .banner-wrapper3 {
-        height: 50px;
+        height: 100px;
         width: 450px;
         background-color: black;
-        border-radius: 23px;
+        border-radius: 50px;
         color: aliceblue;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border: 2px solid rgb(255, 255, 255);
+        
 
     }
 
@@ -263,8 +265,8 @@ nav {
             justify-content: center;
 
             & .banner-itame1-1 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e0.jpg");
                 background-position: center;
                 background-size: cover;
@@ -274,8 +276,8 @@ nav {
             }
 
             & .banner-itame2-1 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e1.jpg");
                 background-position: center;
                 background-size: cover;
@@ -284,8 +286,8 @@ nav {
             }
 
             & .banner-itame3-1 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e2.jpg");
                 background-position: center;
                 background-size: cover;
@@ -303,8 +305,8 @@ nav {
             justify-content: center;
 
             & .banner-itame1-2 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e3.jpg");
                 background-position: center;
                 background-size: cover;
@@ -314,8 +316,8 @@ nav {
             }
 
             & .banner-itame2-2 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e4.jpg");
                 background-position: center;
                 background-size: cover;
@@ -324,8 +326,8 @@ nav {
             }
 
             & .banner-itame3-2 {
-                height: 410px;
-                width: 430px;
+                height: 380px;
+                width: 400px;
                 background-image: url("image/e5.jpg");
                 background-position: center;
                 background-size: cover;
@@ -343,22 +345,18 @@ nav {
         margin-top: 50px;
 
         & .banner-itame1 {
-            height: 900px;
-            width: 430px;
+            height: 800px;
+            width: 400px;
             background-image: url("image/time02.png");
             background-position: center;
             background-size: cover;
             border-radius: 10px;
             border: 15px solid rgb(255, 255, 255);
-            @media screen and (max-width: 700px) {
-                height: auto;
-                max-width: 100%;
-            }
         }
 
         & .banner-itame2 {
-            height: 900px;
-            width: 430px;
+            height: 800px;
+            width: 400px;
             background-image: url("image/time01.png");
             background-position: center;
             background-size: cover;
@@ -367,8 +365,8 @@ nav {
         }
 
         & .banner-itame3 {
-            height: 900px;
-            width: 430px;
+            height: 800px;
+            width: 400px;
             background-image: url("image/time.png");
             background-position: center;
             background-size: cover;
