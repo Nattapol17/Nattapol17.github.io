@@ -242,6 +242,7 @@ nav{
         flex-wrap: wrap;
         column-gap: 50px;
         row-gap: 50px;
+        justify-content: center;
         & .banner-itame1{
             height: 900px;
             width: 430px;
