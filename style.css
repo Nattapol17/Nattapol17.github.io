@@ -39,7 +39,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 400px) {
         flex-direction: column;
     }
 }
@@ -374,7 +374,7 @@ nav {
         }
 
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 400px) {
         flex-direction: column;
     }
 }
@@ -444,7 +444,7 @@ nav {
             }
         }
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 400px) {
         flex-direction: column;
     }
 }
