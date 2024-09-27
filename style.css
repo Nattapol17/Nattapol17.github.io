@@ -257,12 +257,18 @@ nav {
         flex-direction: column;
         row-gap: 50px;
         margin-top: 50px;
+        height: auto;
+        width: 100%;
+        
         & .banner-wrapper2-1 {
             display: flex;
             flex-wrap: wrap;
             column-gap: 30px;
             row-gap: 30px;
             justify-content: center;
+            align-content: center;
+            height: auto;
+            width: 100%;
 
             & .banner-itame1-1 {
                 height: 380px;
@@ -303,6 +309,9 @@ nav {
             column-gap: 30px;
             row-gap: 30px;
             justify-content: center;
+            align-content: center;
+            height: auto;
+            width: 100%;
 
             & .banner-itame1-2 {
                 height: 380px;
@@ -343,10 +352,13 @@ nav {
         row-gap: 50px;
         justify-content: center;
         margin-top: 50px;
+        height: auto;
+        width: 100%;
+        
 
         & .banner-itame1 {
             height: 800px;
-            width: 400px;
+            width: 380px;
             background-image: url("image/time02.png");
             background-position: center;
             background-size: cover;
@@ -356,7 +368,7 @@ nav {
 
         & .banner-itame2 {
             height: 800px;
-            width: 400px;
+            width: 380px;
             background-image: url("image/time01.png");
             background-position: center;
             background-size: cover;
@@ -366,7 +378,7 @@ nav {
 
         & .banner-itame3 {
             height: 800px;
-            width: 400px;
+            width: 380px;
             background-image: url("image/time.png");
             background-position: center;
             background-size: cover;
@@ -463,7 +475,7 @@ nav {
 
 .slides img {
     height: auto;
-    width: 400px;
+    width: 300px;
     margin-top: 3px;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 15px;
