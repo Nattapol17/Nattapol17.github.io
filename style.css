@@ -419,6 +419,47 @@ nav {
                 background-size: cover;
                 border-radius: 10px;
                 border: 5px solid rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & .itame10{
+                    margin-top: 100px;
+                    & .box-input-text{
+                        width: 300px;
+                        height: 40px;
+                        background-color: rgba(143, 141, 141, 0.478);
+                        border: 3px solid white;
+                        border-radius: 5px;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.5rem;
+                        font-family: cursive;
+                    }
+                }
+                & .itame20{
+                    margin-top: 10px;
+                    & .box-input-text{
+                        width: 300px;
+                        height: 40px;
+                        background-color: rgba(143, 141, 141, 0.478);
+                        border: 3px solid white;
+                        border-radius: 5px;
+                        color: rgb(0, 0, 0);
+                        font-size: 1.5rem;
+                        font-family: cursive;
+                    }
+                }
+                & .itame30{
+                    margin-top: 10px;
+                    & .api-post-box-sent-submit{
+                        width: 80px;
+                        height: 40px;
+                        background-color: rgb(255, 255, 255);
+                        border: 5px solid rgb(0, 0, 0);
+                        border-radius: 5px;
+                        font-size: 1.5rem;
+                        font-family: cursive;
+                    }
+                }
             }
         }
 

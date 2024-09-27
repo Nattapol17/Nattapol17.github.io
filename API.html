@@ -24,14 +24,26 @@
     <section class="banner">
         <div class="banner-wrapper5">
             <div class="banner-wrapper5-3">
-                <div class="banner-itame5-3-1"></div>
+                <div class="banner-itame5-3-1">
+                    <div class="itame10">
+                        <input class="box-input-text" type="text" id="studentName">
+                    </div>
+                    <div class="itame20">
+                        <input class="box-input-text" type="text" id="studentId">
+                    </div>
+                    <div class="itame30">
+                        <input class="api-post-box-sent-submit" type="submit">
+                    </div>
+                </div>
             </div>
             <div class="banner-wrapper5-1">
                 <div class="banner-itame5-1-1">
                     <div class="banner-itame1-1">
                         <h1>TIMESTAMP</h1>
                     </div>
-                    <div class="banner-itame1-2"></div>
+                    <div class="banner-itame1-2">
+
+                    </div>
                 </div>
                 <div class="banner-itame5-1-2">
                     <div class="banner-itame2-1">
@@ -60,7 +72,7 @@
                     <div class="banner-itame5-2"></div>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
     </section>
     <section class="contact">
@@ -68,18 +80,52 @@
             <h1>CONTACT INFORMATION</h1>
         </div>
         <ul class="link-contact">
-            <li><a href="https://www.facebook.com/profile.php?id=100012300519462"target="_blnak">
+            <li><a href="https://www.facebook.com/profile.php?id=100012300519462" target="_blnak">
                     <div class="icon1"></div>
                 </a></li>
-            <li><a href="https://www.instagram.com/time_ntp.17/?hl=en"target="_blnak">
+            <li><a href="https://www.instagram.com/time_ntp.17/?hl=en" target="_blnak">
                     <div class="icon2"></div>
                 </a></li>
-            <li><a href="https://www.tiktok.com/@nattapolniamsri?lang=th-TH"target="_blnak">
+            <li><a href="https://www.tiktok.com/@nattapolniamsri?lang=th-TH" target="_blnak">
                     <div class="icon3"></div>
                 </a></li>
-            <li><a href="https://x.com/NattapolN51606"target="_blnak">
+            <li><a href="https://x.com/NattapolN51606" target="_blnak">
                     <div class="icon4"></div>
                 </a></li>
         </ul>
     </section>
 </body>
+
+<script>
+    async function submitData() {
+        // รับข้อมูลจากฟอร์ม
+        const studentId = document.getElementById("studentId").value;
+        const studentName = document.getElementById("studentName").value;
+
+        // สร้างข้อมูลในรูปแบบ JSON
+        const data = {
+            id: studentId,
+            name: studentName
+        };
+
+        // ส่งข้อมูลไปยัง API โดยใช้ fetch
+        try {
+            const response = await fetch("https://206.189.146.138/api/students", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                alert("Sendsuccess!");
+            } else {
+                alert("Send fail.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            alert("Send fail.");
+        }
+    }
+</script>
