@@ -389,6 +389,107 @@ nav {
         }
 
     }
+    & .banner-wrapper5 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        margin-top: 50px;
+        height: auto;
+        width: 100%;
+        & .banner-wrapper5-3 {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            align-content: center;
+            height: auto;
+            width: 100%;
+            & .banner-itame5-3-1 {
+                height: 350px;
+                width: 600px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+        }
+        & .banner-wrapper5-1 {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            align-content: center;
+            height: auto;
+            width: 100%;
+
+            & .banner-itame5-1-1 {
+                height: 380px;
+                width: 400px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+
+            }
+
+            & .banner-itame5-1-2 {
+                height: 380px;
+                width: 400px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+
+            & .banner-itame5-1-3 {
+                height: 380px;
+                width: 400px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+
+        }
+
+        & .banner-wrapper5-2 {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            align-content: center;
+            height: auto;
+            width: 100%;
+
+            & .banner-itame5-2-1 {
+                height: 380px;
+                width: 400px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+
+            }
+
+            & .banner-itame5-2-2 {
+                height: 380px;
+                width: 400px;
+                background-color: rgba(240, 248, 255, 0.548);
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 5px solid rgb(255, 255, 255);
+            }
+        }
+    }
 }
 
 .contact {
@@ -471,10 +572,7 @@ nav {
     background-size: cover;
     display: flex;
     justify-content: center;
-
-
 }
-
 .slides img {
     height: auto;
     width: 600px;
