@@ -6,10 +6,10 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>NATTAPOL</title>
     <script src="Getvalu.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="style.css">
     <nav>
         <div class="profile">
             <h1>ณัฐพล เนียมศรี</h1>
@@ -26,15 +26,18 @@
         <div class="banner-wrapper5">
             <div class="banner-wrapper5-3">
                 <div class="banner-itame5-3-1">
-                    <div class="itame10">
-                        <input class="box-input-text" type="text" id="studentName " required placeholder="Enter studentName">
-                    </div>
-                    <div class="itame20">
-                        <input class="box-input-text" type="text" id="studentId" required placeholder="Enter studentId">
-                    </div>
-                    <div class="itame30">
-                        <input class="api-post-box-sent-submit" type="submit">
-                    </div>
+                    <form onsubmit="event.preventDefault(); submitData();">
+                        <div class="itame10">
+                            <input class="box-input-text" type="text" id="studentId" required
+                                placeholder="Enter StudentID">
+                        </div>
+                        <div class="itame20">
+                            <input class="box-input-text" type="text" id="studentName" required
+                                placeholder="Enter name">
+                        </div>
+                        <div class="itame30"><input class="api-post-box-sent-submit" type="submit">
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="banner-wrapper5-1">
@@ -103,34 +106,34 @@
                 </a></li>
         </ul>
     </section>
-</body>
-</html>
+    <script>
+        async function submitData() {
+            const studentId = document.getElementById("studentId").value;
+            const studentName = document.getElementById("studentName").value;
+            const data = {
+                id: studentId,
+                name: studentName
+            };
+            try {
+                const response = await fetch("https://206.189.146.138/api/students", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                });
 
-<script>
-    async function submitData() {
-        const studentId = document.getElementById("studentId").value;
-        const studentName = document.getElementById("studentName").value;
-        const data = {
-            id: studentId,
-            name: studentName
-        };
-        try {
-            const response = await fetch("https://206.189.146.138/api/students",{
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                alert("Sendsuccess!");
-            } else {
+                if (response.ok) {
+                    alert("Sendsuccess!");
+                } else {
+                    alert("Send fail.");
+                }
+            } catch (error) {
+                console.error("Error:", error);
                 alert("Send fail.");
             }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("Send fail.");
         }
-    }
-</script>
+    </script>
+</body>
+
+</html>
